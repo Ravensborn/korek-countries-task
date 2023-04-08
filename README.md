@@ -12,8 +12,15 @@ The application uses Laravel's built-in features and packages to ensure security
 - Fire up your web server or run `php artisan serve`.
 - That's it.
 
-## Note
+## Notes
 - If you're willing to run the project on a non-root path like `https://localhost/myprojects/this-project` or `https://project.test/this-project`, please make sure to make necessary changes to livewire config, as described [here](https://laravel-livewire.com/docs/2.x/installation#configuring-the-asset-base-url).
+- 
 
+## The Project
+- The project consists of two pages that are built with Laravel Livewire.
+- The frontend components are: `resources/views/livewire/countries/index.blade.php` and `resources/views/livewire/countries/show.blade.php`.
+- The backend components are: `Http/Livewire/Countries/Index.php` and `Http/Livewire/Countries/Show.php`.
+- The project boots and does an API call to `restcountries.com` to fetch the data, after that all the filtering is done client side for better user experience.
+- The show country page fetches the country data from the API based on its lowercase `cca3` code.
 ## Demo
- - The application is also live at [demo.rozhapp.com](https://demo.rozhapp.com).
+ - A demo of the application is live at [demo.rozhapp.com](https://demo.rozhapp.com).
