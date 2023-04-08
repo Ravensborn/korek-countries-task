@@ -1,2 +1,15 @@
-# korek-countries-task
- 
+## Korek - Countries Assignment
+
+The countries project is a web application built with Laravel 10 and Laravel Livewire that allows users to fetch all countries in the world and search for specific countries by name or filter countries by region. The project includes a user-friendly front-end interface and is designed to provide a seamless user experience.
+
+The application uses Laravel's built-in features and packages to ensure security, reliability, and scalability. The code is well-structured, following Laravel's best practices and conventions, making it easy to maintain and extend.
+
+## Installation
+
+- Make sure you are on latest version of composer.
+- Clone the repo.
+- Navigate to the project directory and run `composer install`.
+- Fire up your web server or run `php artisan serve`.
+
+## Demo
+ - The application is also live at <a href="demo.rozhapp.com">demo.rozhapp.com</a>.
