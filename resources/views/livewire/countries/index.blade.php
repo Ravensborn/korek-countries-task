@@ -69,7 +69,7 @@
 
                             <div class="px-5 pb-3 mt-3">
                                 <div class="text-truncate">
-                                    <h5>{{ $country['name'] }}</h5>
+                                    <h5 class="country-name">{{ $country['name'] }}</h5>
                                 </div>
                                 <ul class="list-unstyled">
 

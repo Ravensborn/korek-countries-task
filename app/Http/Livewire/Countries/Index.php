@@ -167,7 +167,24 @@ class Index extends Component
                 return false !== str_starts_with(strtolower($item['name']), strtolower($searchTerm));
             });
 
+//            foreach ($countries as $key => $country) {
+//
+//                $countryNameArray = explode(' ', $country['name']);
+//                $searchTermArray = explode('', $searchTerm);
+//
+//                foreach ($countryNameArray as $word) {
+//                    if($word == $searchTerm) {
+//                        $newName = str_replace($word, "<mark>$word</mark>", $country['name']);
+//                        $countries[$key]['name'] = $newName;
+//                    }
+//                }
+//            }
+//
+
+            $this->emit('highlightText', $this->searchTerm);
+
         }
+
 
         //Paginating an array.
         $countries = array_chunk($countries, $this->perPage, false);

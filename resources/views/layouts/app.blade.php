@@ -110,7 +110,7 @@
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-
+<script src="{{ asset('hilitor.js') }}"></script>
 @livewireScripts
 
 <script>
@@ -143,6 +143,33 @@
     }
 
     darkSwitch.addEventListener('click', switchTheme, false);
+
+</script>
+
+
+<script>
+
+    function highlight(text) {
+
+        let elements = document.getElementsByClassName('country-name');
+
+        Array.from(elements).forEach((element) => {
+            element.innerHTML = element.innerHTML.replace(
+                new RegExp(text + '(?!([^<]+)?<)', 'gi'),
+                '<mark>$&</mark>'
+            );
+        });
+
+    }
+
+    Livewire.on('highlightText', searchedText => {
+        highlight(searchedText);
+    })
+
+
+</script>
+<script>
+
 
 </script>
 
